@@ -1,0 +1,27 @@
+Track-react/
+|--APP/
+|  |-- node_modules/
+|  |-- public/
+|  |  |-- vite.svg
+|  |-- src/
+|  |   |-- assets/
+|  |   |   |-- [pictures]
+|  |   |-- components/
+|  |   |   |-- docs_components/
+|  |   |   |  |--[docs_page_components].jsx
+|  |   |   |-- main_app/
+|  |   |   |  |--[main_app_components].jsx
+|  |   |-- routes/
+|  |   |   |-- [pages].jsx
+|  |   |-- error-page.jsx/
+|  |   |-- index.css/
+|  |   |-- main.jsx/
+|  |   |-- structure.txt/
+|  |-- .env
+|  |-- .eslintrc.cjs
+|  |-- index.html
+|  |-- package-lock.json
+|  |-- package.json
+|  |-- README.md
+|  |-- vite.config.js
+
