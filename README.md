@@ -57,7 +57,55 @@ Is simple interactive docs with screenshots.
 
 ## How to use :white_check_mark:
 
-in near future
+### Run on PC (just for test - without optical sensor)
+- download repository
+- instal node-red
+- instal npm dependencies
+
+```
+npm install
+npm install -g --unsafe-perm node-red
+
+```
+
+
+- run in one terminal node-red with just type command in console:
+
+```
+node-red
+```
+
+
+- run in another terminal VITE react app with command:
+
+```
+npm run dev
+```
+
+- open in one web window node-red (port 1880) app and another react app (port 5173)
+
+```
+localhost:1880
+localhost:5173
+```
+
+- in node red import flow - click:
+[How to import node-red flow](https://nodered.org/docs/user-guide/editor/workspace/import-export)
+[Download from this repo node-red flow](https://github.com/sowicz/React-track-app/blob/master/APP/Node-red-flow.json)
+
+- add ".env" file in "APP" catalogue (in this react project)
+*don't add any name before .env :)
+Inside .env file write and save:
+```
+VITE_WEBSOCKET_URL=ws://localhost:1880/ws/test
+```
+
+
+- Go in web page node-red: localhost:1880 and click "start trigger" button in node-red flow to send triggering (simulate input from optical sensor)
+- Go in web page react app: localhost:5173 and see incoming data from this simulated input triggers
+
+
+
 
 > [!CAUTION]
 > Data appeared after sensor is triggered doesn't save in database yet. After refreshing page it disappear.
